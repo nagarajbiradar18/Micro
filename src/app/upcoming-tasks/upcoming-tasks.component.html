@@ -1,0 +1,19 @@
+<div>
+    <div class="container">
+        <h2>Upcoming Task</h2>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor='let item of addListArray'>
+                <div>{{item.name}}
+                    <input class="pull-right" type="checkbox" name='{{item.isSelected}}' [(ngModel)]="item.isSelected" /></div>
+            </li>
+        </ul>
+        <form #listForm="ngForm" (ngSubmit)="addToTasksList(listForm)">
+            <div class="form-inline">
+                <input type="text" class="form-control" name="listName" ngModel />
+                <button class="btn btn-success" type="submit">Add Task</button>
+                <button type="button" class="btn btn-success pull-right" name="checkedValue" (click)='submitCompletedTasks()'>Submit Completed Tasks</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
