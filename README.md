@@ -1,7 +1,7 @@
 
 # Assignment
 
-Select any tasks and click on submit button, then click on completed task tab, you will be able to see completed task 
+Select any tasks and click on submit button, then click on completed task tab, you will be able to see completed tasks 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
